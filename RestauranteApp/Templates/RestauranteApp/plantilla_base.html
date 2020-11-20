@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'RestauranteApp\css\style.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <title>{% block title %}    {% endblock title%}</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="logo" id="logo">
+                <p>foto</p>
+            </div>
+            <div class="submenu" id="el_menu">
+                <ul>
+                    <a href="#"><li>Menu</li></a>
+                    <a href="#"><li>Factura</li></a>
+                    <a href="#"><li>Nosotros</li></a>
+                    <a href="#"><li><p class="fas fa-shopping-cart"></p></li></a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        {% block content %}
+            
+        {% endblock content %}
+    </section>
+</body>
+</html>
